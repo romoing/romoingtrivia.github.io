@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h6>by: Javier Romo</h6>
+    <div class="container">
+        <h1>Proyecto Final Trivias</h1>
+        <div class="options">
+            <label for="difficulty">Dificultad:</label>
+            <select id="difficulty">
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+            <label for="type">Tipo de Respuesta:</label>
+            <select id="type">
+                <option value="multiple">Opcion Multiple</option>
+                <option value="boolean">Verdadero/Falso</option>
+            </select>
+            <br>
+            <label for="category">Categoría:</label>
+            <select id="category">
+                <!-- Las opciones de categorías se cargarán con JavaScript -->
+            </select>
+            <button onclick="generateTrivia()">Crear Trivia</button>
+        </div>
+        <div id="questions"></div>
+        <div id="score"></div>
+        <button onclick="resetTrivia()">Nueva Trivia</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
